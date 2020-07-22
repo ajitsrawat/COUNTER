@@ -1,0 +1,8 @@
+FROM python:3
+MAINTAINER ajitsrawat
+ENV PYTHONUNBUFFERED=1
+
+#FROM openjdk:slim
+
+ADD alphabetsPrinter.py /
+CMD [ "python", "./alphabetsPrinter.py" ]
