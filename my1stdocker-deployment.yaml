@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: my1stdocker
-        image: my1stdocker:latest
-        imagePullPolicy: Never
+        image: ajitsrawat/my1stdocker:firsttry
+        imagePullPolicy: Always 
         ports:
         - containerPort: 5000
