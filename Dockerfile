@@ -1,5 +1,5 @@
 FROM python:3
-MAINTAINER ajitsrawat
+LABEL org.opencontainers.image.authors=ajitsrawat
 ENV PYTHONUNBUFFERED=1
 
 #FROM openjdk:slim
