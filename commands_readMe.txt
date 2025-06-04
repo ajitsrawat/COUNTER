@@ -2,7 +2,19 @@ Git Commands:
 1) To start Git from github repo:
  git clone https://github.com/ajitsrawat/COUNTER
 
+2) to Add a new file to repo
+ git add file_name repo_name. Eg: 
+ git add commands_readMe.txt COUNTER/
 
+3) To commit the changes
+ git commit file -m "comments"
+ git commit commands_readMe.txt -m "new file"
+
+4) to push the changes to repo:
+   git push
+   Username for 'https://github.com': ajitsrawat
+
+Password for 'https://ajitsrawat@github.com': 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 
 
 
 Docker Commands:
@@ -19,4 +31,41 @@ test         latest    e4d2b9ca0d60   24 seconds ago   1.02GB
 
 3) To run a docker image (container)
 	docker run test
-Note: test is image name	
+Note: test is image name
+
+4) To push docker image to dockerhub repo 
+
+a) tag the image:
+
+docker tag <image_name> <your_dockerhub_username>/<repository_name>:<tag>
+
+docker tag another_test:latest ajitsrawat/test:1.1
+
+b) login to Docker Hub:
+
+docker login
+
+c)push the image:
+docker push <your_dockerhub_username>/<repository_name>:<tag>
+
+docker push ajitsrawat/test:1.1
+
+
+github token to access github:
+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
+
+
+To run pods:
+
+1) Go to Cloud Code
+2) Select Kubernetes
+3) start minikube
+4) To run a pod from yaml file
+	kubectl apply -f my1stdocker-deployment.yaml
+5) To check for pod status
+      kubectl describe po my1stdocker
+5) To check logs of a pod 
+        kubectl logs -f my1stdocker
+6) kubectl exec -it my1stdocker -- /bin/bash
+
+	
