@@ -28,14 +28,10 @@ spec:
     spec:
       containers:
       - name: my1stdocker
-        image: ajitsrawat/my1stdocker:2.0
+        image: ajitsrawat/test:1.1
         imagePullPolicy: Always 
-        ports:
-        - containerPort: 5000
       
       - name: alphabetprinter
-        image: ajitsrawat/alphabetprinter:2.0
+        image: ajitsrawat/test_alphabet:latest
         imagePullPolicy: Always 
-        ports:
-        - containerPort: 5001  
     
