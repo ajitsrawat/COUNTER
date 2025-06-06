@@ -20,7 +20,10 @@ Password for 'https://ajitsrawat@github.com': github_pat_11AQALDYI02IVlUId1wFTg_
 Docker Commands:
 1) To build docker image 
               docker build -t test .
-Note: -t is for tag and "test" is image name
+Note: -t is for tag and "test" is image name. Default Dockerfile is used. In case of other Dockerfile is used, use
+
+docker build -f "FileName" -t test 
+
 
 2) to list docker images:
               docker image ls
