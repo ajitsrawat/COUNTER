@@ -1,0 +1,14 @@
+1)  create a basic python program: test-docker.py
+
+2) Create a basic docker File: Dockerfile
+
+3) Using above mentioned DockerFile,
+	a) Create image
+        b) run container
+        c) Tag it and upload to Docker Hub
+
+4) Using above mentioned image, create YAML file for Pod creation with single container: my1stdocker-pod.yaml
+
+
+
+
