@@ -60,8 +60,11 @@ github_pat_11AQALDYI02IVlUId1wFTg_5FNFsAAisAZo0xekVkAhpgpUbzOBELAgA04ehwsURmkBWF
 
 To run pods:
 
-1) Go to Cloud Code
+1) open Cloud shell
+1.a) click on "Open Editor" on top right. G
+1.c) Go to Cloud Code (left tab: last on bottom)
 2) Select Kubernetes
+2.a) click  on + sign (i.e. "add a cluster to kubeconfig"
 3) start minikube
 4) To run a pod from yaml file
 	kubectl apply -f my1stdocker-deployment.yaml
