@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my1stdocker
+spec:
+  containers:
+  - name: my1stdocker
+    image: ajitsrawat/test:latest
+    imagePullPolicy: Always 
