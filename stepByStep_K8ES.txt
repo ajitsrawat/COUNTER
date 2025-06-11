@@ -9,6 +9,4 @@
 
 4) Using above mentioned image, create YAML file for Pod creation with single container: my1stdocker-pod.yaml
 
-
-
-
+5) Bring up deployment with replica set 2 and pod having two containers, one running my1stdocker and other running alphabetprinter images

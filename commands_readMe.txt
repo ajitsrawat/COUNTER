@@ -6,6 +6,10 @@ Git Commands:
  git add file_name repo_name. Eg: 
  git add commands_readMe.txt COUNTER/
 
+4) to Remove a file from git repo
+    rm fileName
+    git rm fileName
+     
 3) To commit the changes
  git commit file -m "comments"
  git commit commands_readMe.txt -m "new file"
@@ -68,10 +72,30 @@ To run pods:
 3) start minikube
 4) To run a pod from yaml file
 	kubectl apply -f my1stdocker-deployment.yaml
-5) To check for pod status
-      kubectl describe po my1stdocker
-5) To check logs of a pod 
-        kubectl logs -f my1stdocker
-6) kubectl exec -it my1stdocker -- /bin/bash
 
-	
+Pod commands: 
+1) To check for pod status
+      kubectl describe po my1stdocker
+2) To check logs of a pod 
+        kubectl logs -f my1stdocker
+
+3) To login into pod
+ kubectl exec -it my1stdocker -- /bin/bash
+
+ConfigMap
+1) to Create configmap from a file:
+kubectl create configmap test-config --from-file=config.txt
+
+2) To check environment Variables:
+	login into pod
+        printenv
+  
+3) to mount configmap to pod,
+   a) create configmap, 
+   b) mount it on volume. For more details, refer /home/ajitsrawat/ConfigMaps/pod_withConfigMap.yaml 	
+
+4) to edit configmap
+	kubectl edit configmap test-config
+
+Pls. note: on edit of configmap, this will be reflected in volume also (after few second delay)  
+
