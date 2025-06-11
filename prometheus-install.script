@@ -1,3 +1,0 @@
-helm repo update
-helm install prometheus stable/prometheus-operator
-kubectl get all
