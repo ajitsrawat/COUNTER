@@ -1,5 +1,0 @@
-gcloud config set project peppy-gist-283413
-gcloud container clusters create asr --zone us-central1-c
-gcloud container clusters get-credentials asr
-kubectl get svc
-

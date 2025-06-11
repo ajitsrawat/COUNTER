@@ -1,2 +1,0 @@
-gcloud config set project peppy-gist-283413
-gcloud container clusters delete asr --zone us-central1-c
