@@ -97,7 +97,7 @@ kubectl create configmap test-config --from-file=config.txt
 4) to edit configmap
 	kubectl edit configmap test-config
 
-Pls. note: on edit of configmap, this will be reflected in volume also (after few second delay)  
+Pls. note: on edit of configmap, this will be reflected in volume also (after few second delay)
 
+asdf  
 
-asas
