@@ -99,3 +99,5 @@ kubectl create configmap test-config --from-file=config.txt
 
 Pls. note: on edit of configmap, this will be reflected in volume also (after few second delay)  
 
+
+asas
